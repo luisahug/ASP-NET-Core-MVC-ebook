@@ -1,0 +1,32 @@
+﻿@model Capitulo01.Models.Instituicao
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
+
+    </form asp-action="Edit">
+    <div class="form-horizontal">
+        <h4>Instituição</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger">
+        </div>
+        <input type="hidden" asp-for="InstituicaoID" />
+        <div class="form-group">
+            <label asp-for="Nome" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome"
+            </div>
+        </div>
+    </div>
+</body>
+</html>
