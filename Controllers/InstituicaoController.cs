@@ -43,7 +43,7 @@ namespace Capitulo01.Controllers
             };
         public IActionResult Index()
         {
-            return View(instituicoes);
+            return View(instituicoes.OrderBy(i => i.Nome));
         }
 
         public ActionResult Create()
@@ -63,6 +63,15 @@ namespace Capitulo01.Controllers
         public ActionResult Edit(long id)
         {
             return View(instituicoes.Where(i => i.InstituicaoID == id).First());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(Instituicao instituicao)
+        {
+            instituicoes.Remove(instituicoes.Where(i => i.InstituicaoID == instituicao.InstituicaoID).First());
+            instituicoes.Add(instituicao);
+            return RedirectToAction("Index");
         }
     }
 }
