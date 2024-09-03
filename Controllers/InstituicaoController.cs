@@ -73,5 +73,10 @@ namespace Capitulo01.Controllers
             instituicoes.Add(instituicao);
             return RedirectToAction("Index");
         }
+
+        public ActionResult Details(long ID)
+        {
+            return View(instituicoes.Where(i => i.InstituicaoID == id).First());
+        }
     }
 }
