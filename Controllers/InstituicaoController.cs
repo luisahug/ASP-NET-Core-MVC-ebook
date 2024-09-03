@@ -43,7 +43,7 @@ namespace Capitulo01.Controllers
             };
         public IActionResult Index()
         {
-            return View(instituicoes.OrderBy(i => i.Nome));
+            return View(instituicoes.OrderBy(i => i.InstituicaoID));
         }
 
         public ActionResult Create()
@@ -74,9 +74,22 @@ namespace Capitulo01.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult Details(long ID)
+        public ActionResult Details(long id)
         {
             return View(instituicoes.Where(i => i.InstituicaoID == id).First());
+        }
+
+        public ActionResult Delete(long id)
+        {
+            return View(instituicoes.Where(i => i.InstituicaoID == id).First());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete(Instituicao instituicao)
+        {
+            instituicoes.Remove(instituicoes.Where(i => i.InstituicaoID == instituicao.InstituicaoID).First());
+            return RedirectToAction("Index");
         }
     }
 }
