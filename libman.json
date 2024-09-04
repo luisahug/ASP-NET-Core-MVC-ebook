@@ -33,5 +33,23 @@
   "library": "datatables@1.10.21",
   "destination": "wwwroot/lib/datatables/"
 }
+,
+{
+  "provider": "unpkg",
+  "library": "fontawesome@5.6.3",
+  "destination": "wwwroot/lib/fontawesome/"
+}
+,
+{
+  "provider": "cdnjs",
+  "library": "fontawesome-iconpicker@3.2.0",
+  "destination": "wwwroot/lib/fontawesome-iconpicker/"
+}
+,
+{
+  "provider": "cdnjs",
+  "library": "font-awesome@6.6.0",
+  "destination": "wwwroot/lib/font-awesome/"
+}
 ]
 }
