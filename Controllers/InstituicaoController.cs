@@ -1,5 +1,6 @@
 ﻿using Capitulo01.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -84,12 +85,17 @@ namespace Capitulo01.Controllers
             return View(instituicoes.Where(i => i.InstituicaoID == id).First());
         }
 
-        [HttpPost]
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(Instituicao instituicao)
         {
-            instituicoes.Remove(instituicoes.Where(i => i.InstituicaoID == instituicao.InstituicaoID).First());
-            return RedirectToAction("Index");
-        }
+			var tempInstituicao = instituicoes.FirstOrDefault(i => i.InstituicaoID == instituicao.InstituicaoID);
+			if (tempInstituicao != null)
+			{
+				instituicoes.Remove(instituicao);
+				TempData["Message"] = "Instituição " + tempInstituicao.Nome.ToUpper() + " foi removida";
+			}
+			return RedirectToAction("Index");
+		}
     }
 }
