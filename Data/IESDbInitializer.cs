@@ -16,7 +16,7 @@ namespace Capitulo01.Data
 
             var departamentos = new Departamento[]
             {
-                new Departamento { Nome="Ciência da Computação"},
+                new Departamento {Nome="Ciência da Computação"},
                 new Departamento {Nome="Engenharia de Software"}
             };
 
