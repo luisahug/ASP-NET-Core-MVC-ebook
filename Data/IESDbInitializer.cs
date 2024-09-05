@@ -24,6 +24,41 @@ namespace Capitulo01.Data
             {
                 context.Departamentos.Add(d);
             }
+
+            var instituicoes = new Instituicao[]
+            {
+				new Instituicao()
+				{
+					Nome = "UFRGS",
+					Endereco = "Porto Alegre"
+				},
+				new Instituicao()
+				{
+					Nome = "Feevale",
+					Endereco = "Novo Hamburgo"
+				},
+				new Instituicao()
+				{
+					Nome = "Unisinos",
+					Endereco = "São Leopoldo"
+				},
+				new Instituicao()
+				{
+					Nome = "Faccat",
+					Endereco = "Taquara"
+				},
+				new Instituicao()
+				{
+					Nome = "PUCRS",
+					Endereco = "Porto Alegre"
+				}
+			};
+
+			foreach (Instituicao i in instituicoes)
+			{
+				context.Instituicoes.Add(i);
+			}
+
             context.SaveChanges();
         }
     }
