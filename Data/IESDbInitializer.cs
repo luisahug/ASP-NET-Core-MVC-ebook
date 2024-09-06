@@ -1,5 +1,6 @@
 ﻿using Capitulo01.Models;
 using System.Linq;
+using Modelo.Cadastros;
 
 namespace Capitulo01.Data
 {

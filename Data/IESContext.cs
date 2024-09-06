@@ -1,5 +1,6 @@
 ﻿using Capitulo01.Models;
 using Microsoft.EntityFrameworkCore;
+using Modelo.Cadastros;
 
 namespace Capitulo01.Data
 {
