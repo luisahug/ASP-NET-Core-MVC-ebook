@@ -1,6 +1,7 @@
 ﻿using Capitulo01.Data;
 using Capitulo01.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
@@ -34,7 +35,7 @@ namespace Capitulo01.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Nome")] Departamento departamento)
+        public async Task<IActionResult> Create([Bind("Nome, InstituicaoID")] Departamento departamento)
         {
             try
             {
@@ -64,12 +65,14 @@ namespace Capitulo01.Controllers
             {
                 return NotFound();
             }
+            ViewBag.Instituicoes = new SelectList(_context.Instituicoes.OrderBy(b => b.Nome),
+                    "InstituicaoID", "Nome", departamento.InstituicaoID);
             return View(departamento);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(long? id, [Bind("DepartamentoID, Nome")] Departamento departamento)
+        public async Task<IActionResult> Edit(long? id, [Bind("DepartamentoID, Nome, InstituicaoID")] Departamento departamento)
         {
             if (id != departamento.DepartamentoID)
             {
@@ -95,6 +98,9 @@ namespace Capitulo01.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+
+            ViewBag.Instituicoes = new SelectList(_context.Instituicoes.OrderBy(b => b.Nome),
+                "InstituicaoID", "Nome", departamento.InstituicaoID);
             return View(departamento);
         }
 
