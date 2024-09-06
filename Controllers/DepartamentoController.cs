@@ -17,7 +17,7 @@ namespace Capitulo01.Controllers
         
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Departamentos.OrderBy(c => c.Nome).ToListAsync());
+            return View(await _context.Departamentos.Include(i =>i.Instituicao).OrderBy(c => c.Nome).ToListAsync());
         }
 
         public IActionResult Create()

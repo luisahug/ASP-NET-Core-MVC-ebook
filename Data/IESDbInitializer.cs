@@ -7,22 +7,12 @@ namespace Capitulo01.Data
     {
         public static void Initialize(IESContext context)
         {
-            context.Database.EnsureCreated();
+			context.Database.EnsureDeleted();
+			context.Database.EnsureCreated();
 
             if (context.Departamentos.Any())
             {
                 return;
-            }
-
-            var departamentos = new Departamento[]
-            {
-                new Departamento {Nome="Ciência da Computação"},
-                new Departamento {Nome="Engenharia de Software"}
-            };
-
-            foreach (Departamento d in departamentos)
-            {
-                context.Departamentos.Add(d);
             }
 
             var instituicoes = new Instituicao[]
@@ -59,7 +49,21 @@ namespace Capitulo01.Data
 				context.Instituicoes.Add(i);
 			}
 
-            context.SaveChanges();
-        }
+
+			context.SaveChanges();
+
+			var departamentos = new Departamento[]
+			{
+				new Departamento {Nome="Ciência da Computação", InstituicaoID = instituicoes[0].InstituicaoID},
+				new Departamento {Nome="Engenharia de Software", InstituicaoID = instituicoes[1].InstituicaoID}
+			};
+
+			foreach (Departamento d in departamentos)
+			{
+				context.Departamentos.Add(d);
+			}
+
+			context.SaveChanges();
+		}
     }
 }
