@@ -12,6 +12,8 @@
     <environment exclude="Development">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/font-awesome.min.css"
               asp-fallback-href="~/lib/font-awesome/css/all.css"
+              asp-fallback-test-class="sr-only" 
+              asp-fallback-test-property="position" 
               asp-fallback-test-value="absolute" />
     </environment>
     <div class="card-block">
@@ -40,6 +42,16 @@
                         </span>
                     </div>
                     <input asp-for="Nome" class="form-control" disabled="disabled" />
+                </div>
+                <label for="Instituicao.Nome" class="control-label" ></label>
+                <br/ >
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-prepend">
+                            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <input asp-for="Instituicao.Nome" class="form-control" disabled="disabled"/>
                 </div>
             </div>
         </div>
