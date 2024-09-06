@@ -50,7 +50,7 @@ namespace Capitulo01.Data
 			}
 
 
-			context.SaveChanges();
+			context.SaveChanges(); //primeiro salvar os novos dados de instituicao antes de relacioná-los com departamentos
 
 			var departamentos = new Departamento[]
 			{

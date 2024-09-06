@@ -22,6 +22,13 @@ namespace Capitulo01.Controllers
 
         public IActionResult Create()
         {
+            var instituicoes = _context.Instituicoes.OrderBy(i => i.Nome).ToList();
+            instituicoes.Insert(0, new Instituicao()
+            {
+                InstituicaoID = 0,
+                Nome = "Selecione	a	instituição"
+            });
+            ViewBag.Instituicoes = instituicoes;
             return View();
         }
 
