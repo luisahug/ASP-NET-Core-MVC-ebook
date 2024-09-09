@@ -1,0 +1,573 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Capitulo01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\controllers\\instituicaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:controllers\\instituicaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\data\\dal\\cadastros\\instituicaodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:data\\dal\\cadastros\\instituicaodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/IESUtpfr/True/SqlTable/dbo.Departamentos.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/IESUtpfr/True/SqlTable/dbo.Departamento.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/IESUtpfr/True/SqlTable/dbo.Instituicao.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\controllers\\departamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:controllers\\departamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\data\\iesdbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:data\\iesdbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\data\\iescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:data\\iescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\views\\instituicao\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:views\\instituicao\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\views\\instituicao\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:views\\instituicao\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\views\\instituicao\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:views\\instituicao\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\views\\instituicao\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:views\\instituicao\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\views\\instituicao\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:views\\instituicao\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\views\\instituicao\\_comdepartamentos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:views\\instituicao\\_comdepartamentos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\views\\departamento\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:views\\departamento\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\views\\departamento\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:views\\departamento\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\views\\departamento\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:views\\departamento\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\views\\departamento\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:views\\departamento\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\views\\departamento\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:views\\departamento\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\capitulo01.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:capitulo01.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6660232-946F-4E68-AC53-F81789033B90}|..\\Modelo\\Modelo.csproj|d:\\modelo\\cadastros\\instituicao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6660232-946F-4E68-AC53-F81789033B90}|..\\Modelo\\Modelo.csproj|d:\\modelo\\cadastros\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\libman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:libman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|d:\\capitulo01\\views\\shared\\_layouties.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2409E59-4F1B-4374-B8CF-6196D361F863}|Capitulo01.csproj|solutionrelative:views\\shared\\_layouties.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InstituicaoDAL.cs",
+              "DocumentMoniker": "D:\\Capitulo01\\Data\\DAL\\Cadastros\\InstituicaoDAL.cs",
+              "RelativeDocumentMoniker": "Data\\DAL\\Cadastros\\InstituicaoDAL.cs",
+              "ToolTip": "D:\\Capitulo01\\Data\\DAL\\Cadastros\\InstituicaoDAL.cs*",
+              "RelativeToolTip": "Data\\DAL\\Cadastros\\InstituicaoDAL.cs*",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAowBEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T12:32:33.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Capitulo01\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Capitulo01\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T14:15:56.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InstituicaoController.cs",
+              "DocumentMoniker": "D:\\Capitulo01\\Controllers\\InstituicaoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InstituicaoController.cs",
+              "ToolTip": "D:\\Capitulo01\\Controllers\\InstituicaoController.cs",
+              "RelativeToolTip": "Controllers\\InstituicaoController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAADgvygAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T14:14:11.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DepartamentoController.cs",
+              "DocumentMoniker": "D:\\Capitulo01\\Controllers\\DepartamentoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DepartamentoController.cs",
+              "ToolTip": "D:\\Capitulo01\\Controllers\\DepartamentoController.cs",
+              "RelativeToolTip": "Controllers\\DepartamentoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T19:17:27.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\Capitulo01\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\Capitulo01\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T16:35:06.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IESDbInitializer.cs",
+              "DocumentMoniker": "D:\\Capitulo01\\Data\\IESDbInitializer.cs",
+              "RelativeDocumentMoniker": "Data\\IESDbInitializer.cs",
+              "ToolTip": "D:\\Capitulo01\\Data\\IESDbInitializer.cs",
+              "RelativeToolTip": "Data\\IESDbInitializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T18:22:35.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IESContext.cs",
+              "DocumentMoniker": "D:\\Capitulo01\\Data\\IESContext.cs",
+              "RelativeDocumentMoniker": "Data\\IESContext.cs",
+              "ToolTip": "D:\\Capitulo01\\Data\\IESContext.cs",
+              "RelativeToolTip": "Data\\IESContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T18:22:24.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Capitulo01\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\Capitulo01\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-06T19:54:06.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Capitulo01\\Views\\Instituicao\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Instituicao\\Edit.cshtml",
+              "ToolTip": "D:\\Capitulo01\\Views\\Instituicao\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Instituicao\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T16:51:09.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Capitulo01\\Views\\Instituicao\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Instituicao\\Details.cshtml",
+              "ToolTip": "D:\\Capitulo01\\Views\\Instituicao\\Details.cshtml",
+              "RelativeToolTip": "Views\\Instituicao\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T17:05:14.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Capitulo01\\Views\\Instituicao\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Instituicao\\Index.cshtml",
+              "ToolTip": "D:\\Capitulo01\\Views\\Instituicao\\Index.cshtml",
+              "RelativeToolTip": "Views\\Instituicao\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T19:15:57.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Capitulo01\\Views\\Instituicao\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Instituicao\\Delete.cshtml",
+              "ToolTip": "D:\\Capitulo01\\Views\\Instituicao\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Instituicao\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T18:06:34.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Capitulo01\\Views\\Instituicao\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Instituicao\\Create.cshtml",
+              "ToolTip": "D:\\Capitulo01\\Views\\Instituicao\\Create.cshtml",
+              "RelativeToolTip": "Views\\Instituicao\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T19:07:37.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_ComDepartamentos.cshtml",
+              "DocumentMoniker": "D:\\Capitulo01\\Views\\Instituicao\\_ComDepartamentos.cshtml",
+              "RelativeDocumentMoniker": "Views\\Instituicao\\_ComDepartamentos.cshtml",
+              "ToolTip": "D:\\Capitulo01\\Views\\Instituicao\\_ComDepartamentos.cshtml",
+              "RelativeToolTip": "Views\\Instituicao\\_ComDepartamentos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T19:07:31.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Capitulo01\\Views\\Departamento\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Departamento\\Index.cshtml",
+              "ToolTip": "D:\\Capitulo01\\Views\\Departamento\\Index.cshtml",
+              "RelativeToolTip": "Views\\Departamento\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T19:16:07.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Capitulo01\\Views\\Departamento\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Departamento\\Edit.cshtml",
+              "ToolTip": "D:\\Capitulo01\\Views\\Departamento\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Departamento\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T16:42:02.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Capitulo01\\Views\\Departamento\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Departamento\\Details.cshtml",
+              "ToolTip": "D:\\Capitulo01\\Views\\Departamento\\Details.cshtml",
+              "RelativeToolTip": "Views\\Departamento\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T16:54:25.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Capitulo01\\Views\\Departamento\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Departamento\\Delete.cshtml",
+              "ToolTip": "D:\\Capitulo01\\Views\\Departamento\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Departamento\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T16:42:30.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Capitulo01\\Views\\Departamento\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Departamento\\Create.cshtml",
+              "ToolTip": "D:\\Capitulo01\\Views\\Departamento\\Create.cshtml",
+              "RelativeToolTip": "Views\\Departamento\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T12:59:12.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Capitulo01.csproj",
+              "DocumentMoniker": "D:\\Capitulo01\\Capitulo01.csproj",
+              "RelativeDocumentMoniker": "Capitulo01.csproj",
+              "ToolTip": "D:\\Capitulo01\\Capitulo01.csproj",
+              "RelativeToolTip": "Capitulo01.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-03T14:23:13.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Instituicao.cs",
+              "DocumentMoniker": "D:\\Modelo\\Cadastros\\Instituicao.cs",
+              "RelativeDocumentMoniker": "..\\Modelo\\Cadastros\\Instituicao.cs",
+              "ToolTip": "D:\\Modelo\\Cadastros\\Instituicao.cs",
+              "RelativeToolTip": "..\\Modelo\\Cadastros\\Instituicao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T19:46:06.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Departamento.cs",
+              "DocumentMoniker": "D:\\Modelo\\Cadastros\\Departamento.cs",
+              "RelativeDocumentMoniker": "..\\Modelo\\Cadastros\\Departamento.cs",
+              "ToolTip": "D:\\Modelo\\Cadastros\\Departamento.cs",
+              "RelativeToolTip": "..\\Modelo\\Cadastros\\Departamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T19:46:01.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Capitulo01\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Capitulo01\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T16:06:05.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Capitulo01\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Capitulo01\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T18:45:56.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Capitulo01\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Capitulo01\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T18:37:29.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\Capitulo01\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\Capitulo01\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T19:07:27.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Capitulo01\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Capitulo01\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-04T12:28:18.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "libman.json",
+              "DocumentMoniker": "D:\\Capitulo01\\libman.json",
+              "RelativeDocumentMoniker": "libman.json",
+              "ToolTip": "D:\\Capitulo01\\libman.json",
+              "RelativeToolTip": "libman.json",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-04T12:45:23.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Capitulo01\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Capitulo01\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-03T16:16:29.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "dbo.Departamentos.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/IESUtpfr/True/SqlTable/dbo.Departamentos.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/IESUtpfr/True/SqlTable/dbo.Departamentos.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-09-05T18:13:45.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dbo.Departamento.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/IESUtpfr/True/SqlTable/dbo.Departamento.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/IESUtpfr/True/SqlTable/dbo.Departamento.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-09-05T16:42:29.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Capitulo01\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Capitulo01\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "Pages\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T15:55:58.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "dbo.Instituicao.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/IESUtpfr/True/SqlTable/dbo.Instituicao.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/IESUtpfr/True/SqlTable/dbo.Instituicao.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-09-05T14:13:56.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAOwSAAAAAAAAAAAjwPgSAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-09-04T18:32:18.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "_LayoutIES.cshtml",
+              "DocumentMoniker": "D:\\Capitulo01\\Views\\Shared\\_LayoutIES.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LayoutIES.cshtml",
+              "ToolTip": "D:\\Capitulo01\\Views\\Shared\\_LayoutIES.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LayoutIES.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAC8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-04T12:26:26.949Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "provider": "unpkg",
+      "library": "bootstrap@4.5.0",
+      "destination": "wwwroot/lib/bootstrap/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "jquery@3.7.1",
+      "destination": "wwwroot/lib/jquery/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "jquery-validate@1.21.0",
+      "destination": "wwwroot/lib/jquery-validate/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "jquery-validation-unobtrusive@4.0.0",
+      "destination": "wwwroot/lib/jquery-validation-unobtrusive/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "popper.js@2.11.8",
+      "destination": "wwwroot/lib/popper.js/"
+    }
+  ,
+{
+  "provider": "cdnjs",
+  "library": "datatables@1.10.21",
+  "destination": "wwwroot/lib/datatables/"
+}
+,
+{
+  "provider": "unpkg",
+  "library": "fontawesome@5.6.3",
+  "destination": "wwwroot/lib/fontawesome/"
+}
+,
+{
+  "provider": "cdnjs",
+  "library": "fontawesome-iconpicker@3.2.0",
+  "destination": "wwwroot/lib/fontawesome-iconpicker/"
+}
+,
+{
+  "provider": "cdnjs",
+  "library": "font-awesome@6.6.0",
+  "destination": "wwwroot/lib/font-awesome/"
+}
+]
+}
