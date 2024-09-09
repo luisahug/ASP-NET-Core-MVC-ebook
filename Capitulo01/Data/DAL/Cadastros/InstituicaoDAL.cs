@@ -13,7 +13,7 @@ namespace Capitulo01.Data.DAL.Cadastros
 			_context = context;
 		}
 
-		public IQueryable<Instituicao> ObterInstituicaoClassificadasPorNome()
+		public IQueryable<Instituicao> ObterInstituicoesClassificadasPorNome()
 		{
 			return _context.Instituicoes.OrderBy(b => b.Nome);
 		}

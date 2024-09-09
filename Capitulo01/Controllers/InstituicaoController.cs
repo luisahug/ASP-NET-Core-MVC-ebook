@@ -23,7 +23,7 @@ namespace Capitulo01.Controllers
         }
 		public async Task<IActionResult> Index()
 		{
-            return View(await instituicaoDAL.ObterInstituicaoClassificadasPorNome().ToListAsync());
+            return View(await instituicaoDAL.ObterInstituicoesClassificadasPorNome().ToListAsync());
         }
 
 		private async Task<IActionResult> ObterVisaoInstituicaoPorId(long? id)
