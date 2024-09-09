@@ -4,6 +4,10 @@
     Layout = "_LayoutIES";
 }
 
+@{
+	ViewData["Title"] = "Instituições - ";
+}
+
 @section Styles {
 	<environment include="Development">
 		<link rel="stylesheet" href="~/lib/datatables/css/jquery.dataTables.min.css" />
@@ -16,7 +20,7 @@
 }
 @if (@TempData["Message"] != null)
 {
-	<div class="alert	alert-success" role="alert">
+	<div class="alert alert-success" role="alert">
 		@TempData["Message"]
 	</div>
 }
