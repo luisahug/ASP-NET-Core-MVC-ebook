@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Modelo.Cadastros;
 using Capitulo01.Data.DAL.Cadastros;
+using System.Threading.Tasks;
 
 namespace Capitulo01.Controllers
 {
@@ -46,7 +47,7 @@ namespace Capitulo01.Controllers
 			return await ObterVisaoInstituicaoPorId(id);
         }
 
-        public ActionResult Create()
+        public IActionResult Create()
         {
             return View();
         }
