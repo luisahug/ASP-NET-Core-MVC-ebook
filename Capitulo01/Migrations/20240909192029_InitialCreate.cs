@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
+using Modelo.Cadastros;
 
 #nullable disable
 
@@ -24,7 +25,18 @@ namespace Capitulo01.Migrations
                     table.PrimaryKey("PK_Instituicoes", x => x.InstituicaoID);
                 });
 
-            
+            migrationBuilder.InsertData(
+                table: "Instituicoes",
+                columns: new[] {"Nome", "Endereco"},
+                values: new object[,]
+                {
+                    {"UFRGS","Porto Alegre"},
+                    {"Feevale","Novo Hamburgo"},
+                    {"Unisinos","São Leopoldo"},
+                    {"PUCRS","Porto Alegre"},
+                    {"Faccat","Taquara"},
+
+                });
 
             migrationBuilder.CreateTable(
                 name: "Departamento",
