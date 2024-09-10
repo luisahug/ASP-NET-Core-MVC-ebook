@@ -1,10 +1,23 @@
 using Microsoft.EntityFrameworkCore;
 using Capitulo01.Data;
+using Capitulo01.Models.Infra;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddIdentity<UsuarioDaAplicacao, IdentityRole>()
+	.AddEntityFrameworkStores<IESContext>()
+	.AddDefaultTokenProviders();
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.Cookie.Name = "UserLoginCookie";
+    options.LoginPath = "/Infra/Acessar";
+});
+
 builder.Services.AddControllersWithViews();
+
 builder.Services.AddDbContext<IESContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -21,11 +34,13 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "areaRoute",
-    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+    name: "default",
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+);
 
 /*using (var scope = app.Services.CreateScope())
 {

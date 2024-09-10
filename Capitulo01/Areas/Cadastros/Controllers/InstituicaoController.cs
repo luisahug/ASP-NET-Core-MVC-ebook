@@ -8,10 +8,12 @@ using System.Linq;
 using Modelo.Cadastros;
 using Capitulo01.Data.DAL.Cadastros;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Capitulo01.Areas.Cadastros.Controllers
 {
     [Area("Cadastros")]
+    [Authorize]
     public class InstituicaoController : Controller
     {
         private readonly IESContext _context;
