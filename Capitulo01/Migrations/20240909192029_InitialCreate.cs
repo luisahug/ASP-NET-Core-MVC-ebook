@@ -24,6 +24,8 @@ namespace Capitulo01.Migrations
                     table.PrimaryKey("PK_Instituicoes", x => x.InstituicaoID);
                 });
 
+            
+
             migrationBuilder.CreateTable(
                 name: "Departamento",
                 columns: table => new

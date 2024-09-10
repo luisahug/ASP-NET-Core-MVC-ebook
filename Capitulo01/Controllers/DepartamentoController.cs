@@ -24,17 +24,13 @@ namespace Capitulo01.Controllers
         
         public async Task<IActionResult> Index()
         {
-            return View((await departamentoDAL.ObterDepartamentosClassificadosPorNome().ToListAsync()));
+            return View(await departamentoDAL.ObterDepartamentosClassificadosPorNome().ToListAsync());
         }
 
         public IActionResult Create()
         {
             var instituicoes = instituicaoDAL.ObterInstituicoesClassificadasPorNome().ToList();
-            instituicoes.Insert(0, new Instituicao()
-            {
-                InstituicaoID = 0,
-                Nome = "Selecione	a	instituição"
-            });
+            instituicoes.Insert(0, new Instituicao() { InstituicaoID = 0, Nome = "Selecione a instituição" });
             ViewBag.Instituicoes = instituicoes;
             return View();
         }
