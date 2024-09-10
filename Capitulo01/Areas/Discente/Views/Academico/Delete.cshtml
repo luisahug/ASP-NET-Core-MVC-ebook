@@ -1,11 +1,11 @@
-﻿@model Modelo.Cadastros.Departamento
+﻿@model Modelo.Discente.Academico
 
 @{
 	Layout = "_LayoutIES";
 }
 
 @{
-	ViewData["Title"] = "Deletar departamento - ";
+	ViewData["Title"] = "Deletar acadêmico - ";
 }
 
 @section Styles {
@@ -22,18 +22,19 @@
 
 <div class="card-block">
 	<div class="card-header text-white bg-secondary text-center h1">
-		Exibindo um departamento existente
+		Exibindo um acadêmico existente
 	</div>
 
-	@Html.Partial("~/Views/Departamento/_PartialDetailsContentCard.cshtml", Model)
-	
-	 <div class="card-footer	bg-info	text-center	text-white">
+	@Html.Partial("~/Areas/Discente/Views/Academico/_PartialDetailsContentCard.cshtml", Model)
+
+	<div class="card-footer	bg-info	text-center	text-white">
 		<a asp-action="Index" class="btn btn-danger">
-			Retornar à listagem de departamentos</a>
-			<button type="button" class="btn btn-dark" data-toggle="modal" 
+			Retornar à listagem de acadêmicos
+		</a>
+		<button type="button" class="btn btn-dark" data-toggle="modal"
 				data-target="#modalConfirmationDelete">
-				Remover departamento
-			</button>
+			Remover acadêmico
+		</button>
 	</div>
 </div>
 
@@ -43,7 +44,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<h5 class="modal-title" id="deleteModal">
-					Remoção de	Departamento
+					Remoção de Acadêmico
 				</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
@@ -51,13 +52,13 @@
 			</div>
 			<div class="modal-body">
 				<p>
-					Confirma a exclusão do departamento @Model.Nome.ToUpper() ??
+					Confirma a exclusão do acadêmico @Model.Nome.ToUpper() ??
 				</p>
 			</div>
 			<div class="modal-footer">
 				<form asp-action="Delete">
-					<input type="hidden" asp-for="DepartamentoID" />
-					<input type="submit" value="Remover	Departamento" class="btn btn-primary" />
+					<input type="hidden" asp-for="AcademicoID" />
+					<input type="submit" value="Remover	Acadêmico" class="btn btn-primary" />
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">
 						Fechar
 					</button>
