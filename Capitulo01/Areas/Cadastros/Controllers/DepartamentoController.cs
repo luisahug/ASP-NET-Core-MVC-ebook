@@ -7,8 +7,9 @@ using Modelo.Cadastros;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Capitulo01.Controllers
+namespace Capitulo01.Areas.Cadastros.Controllers
 {
+    [Area("Cadastros")]
     public class DepartamentoController : Controller
     {
         private readonly IESContext _context;
@@ -17,11 +18,11 @@ namespace Capitulo01.Controllers
 
         public DepartamentoController(IESContext context)
         {
-            this._context = context;
+            _context = context;
             instituicaoDAL = new InstituicaoDAL(context);
             departamentoDAL = new DepartamentoDAL(context);
         }
-        
+
         public async Task<IActionResult> Index()
         {
             return View(await departamentoDAL.ObterDepartamentosClassificadosPorNome().ToListAsync());
@@ -58,7 +59,7 @@ namespace Capitulo01.Controllers
         {
             ViewResult visaoDepartamento = (ViewResult)await ObterVisaoDepartamentoPorId(id);
             Departamento departamento = (Departamento)visaoDepartamento.Model;
-            ViewBag.Instituicoes = new SelectList(instituicaoDAL.ObterInstituicoesClassificadasPorNome(), "InstituicaoID", "Nome",departamento.InstituicaoID);
+            ViewBag.Instituicoes = new SelectList(instituicaoDAL.ObterInstituicoesClassificadasPorNome(), "InstituicaoID", "Nome", departamento.InstituicaoID);
             return visaoDepartamento;
         }
 
@@ -90,7 +91,7 @@ namespace Capitulo01.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            ViewBag.Instituicoes = new SelectList(instituicaoDAL.ObterInstituicoesClassificadasPorNome(), "InstituicaoID", "Nome",departamento.InstituicaoID);
+            ViewBag.Instituicoes = new SelectList(instituicaoDAL.ObterInstituicoesClassificadasPorNome(), "InstituicaoID", "Nome", departamento.InstituicaoID);
             return View(departamento);
         }
 
@@ -116,7 +117,7 @@ namespace Capitulo01.Controllers
             var departamento = await departamentoDAL.EliminarDepartamentoPorId((long)id);
             TempData["Message"] = "Departamento" + departamento.Nome.ToUpper() + " foi removido";
             await _context.SaveChangesAsync();
-			return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Index));
         }
 
         private async Task<IActionResult> ObterVisaoDepartamentoPorId(long? id)

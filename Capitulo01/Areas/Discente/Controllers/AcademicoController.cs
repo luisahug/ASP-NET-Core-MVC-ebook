@@ -5,8 +5,9 @@ using Microsoft.EntityFrameworkCore;
 using Modelo.Discente;
 using System.Threading.Tasks;
 
-namespace Capitulo01.Controllers
+namespace Capitulo01.Areas.Discente.Controllers
 {
+    [Area("Discente")]
     public class AcademicoController : Controller
     {
         private readonly IESContext _context;
@@ -59,7 +60,7 @@ namespace Capitulo01.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Nome,RegistroAcademico,Nascimento")]	Academico academico)
+        public async Task<IActionResult> Create([Bind("Nome,RegistroAcademico,Nascimento")] Academico academico)
         {
             try
             {
@@ -72,13 +73,13 @@ namespace Capitulo01.Controllers
             catch (DbUpdateException)
             {
                 ModelState.AddModelError("", "Não foi possível inserir os dados.");
-             }
+            }
             return View(academico);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(long? id, [Bind("AcademicoID,Nome,RegistroAcademico,Nascimento")]	Academico academico)
+        public async Task<IActionResult> Edit(long? id, [Bind("AcademicoID,Nome,RegistroAcademico,Nascimento")] Academico academico)
         {
             if (id != academico.AcademicoID)
             {
