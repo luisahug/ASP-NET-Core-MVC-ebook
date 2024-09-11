@@ -60,13 +60,18 @@ namespace Capitulo01.Areas.Discente.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Nome,RegistroAcademico,Nascimento")] Academico academico)
+        public async Task<IActionResult> Create([Bind("Nome,RegistroAcademico,Nascimento")] Academico academico, IFormFile foto)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    await academicoDAL.GravarAcademico(academico);
+					var stream = new MemoryStream();
+					await foto.CopyToAsync(stream);
+					academico.Foto = stream.ToArray();
+					academico.FotoMimeType = foto.ContentType;
+
+					await academicoDAL.GravarAcademico(academico);
                     return RedirectToAction(nameof(Index));
                 }
             }
@@ -79,7 +84,7 @@ namespace Capitulo01.Areas.Discente.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(long? id, [Bind("AcademicoID,Nome,RegistroAcademico,Nascimento")] Academico academico)
+        public async Task<IActionResult> Edit(long? id, [Bind("AcademicoID,Nome,RegistroAcademico,Nascimento")] Academico academico, IFormFile foto)
         {
             if (id != academico.AcademicoID)
             {
@@ -89,6 +94,11 @@ namespace Capitulo01.Areas.Discente.Controllers
             {
                 try
                 {
+                    var stream = new MemoryStream();
+                    await foto.CopyToAsync(stream);
+                    academico.Foto = stream.ToArray();
+                    academico.FotoMimeType = foto.ContentType;
+
                     await academicoDAL.GravarAcademico(academico)
 ;
                 }
@@ -121,6 +131,16 @@ namespace Capitulo01.Areas.Discente.Controllers
         private async Task<bool> AcademicoExists(long? id)
         {
             return await academicoDAL.ObterAcademicoPorId((long)id) != null;
+        }
+
+        public async Task<FileContentResult> GetFoto(long id)
+        {
+            Academico academico = await academicoDAL.ObterAcademicoPorId(id);
+            if (academico != null)
+            {
+                return File(academico.Foto, academico.FotoMimeType);
+            }
+            return null;
         }
     }
 }
