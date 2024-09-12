@@ -57,6 +57,17 @@ namespace Capitulo01.Migrations
                         principalColumn: "InstituicaoID");
                 });
 
+            migrationBuilder.InsertData(
+                    table: "Departamento",
+                    columns: new[] { "Nome", "InstituicaoID" },
+                    values: new object[,]
+                    {
+                        {"Saúde",1},
+                        {"Tecnologia",2},
+                        {"Saúde",3}
+
+                    });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Departamento_InstituicaoID",
                 table: "Departamento",

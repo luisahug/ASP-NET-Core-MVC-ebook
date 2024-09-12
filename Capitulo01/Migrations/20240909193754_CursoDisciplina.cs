@@ -29,6 +29,17 @@ namespace Capitulo01.Migrations
                         principalColumn: "DepartamentoID");
                 });
 
+            migrationBuilder.InsertData(
+                table: "Cursos",
+                columns: new[] { "Nome", "DepartamentoID" },
+                values: new object[,]
+                {
+                    {"Medicina",1},
+                    {"Ciência da Computação",2},
+                    {"Psicologia",1}
+
+                });
+
             migrationBuilder.CreateTable(
                 name: "Disciplinas",
                 columns: table => new
