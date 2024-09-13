@@ -1,11 +1,13 @@
 ﻿using Capitulo01.Areas.Docente.Models;
 using Capitulo01.Data;
 using Capitulo01.Data.DAL.Cadastros;
+using Capitulo01.Data.DAL.Discente;
 using Capitulo01.Data.DAL.Docente;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using Modelo.Cadastros;
 using Modelo.Docente;
 using Newtonsoft.Json;
@@ -92,8 +94,8 @@ namespace Capitulo01.Areas.Docente.Controllers
                     cursoDAL.ObterCursosPorDepartamento((long)model.DepartamentoID).ToList(),
                     cursoDAL.ObterProfessoresForaDoCurso((long)model.CursoID).ToList());
             }
-            return View(model);
-        }
+			return RedirectToAction(nameof(VerificarUltimosRegistros));
+		}
 
         public JsonResult ObterDepartamentosPorInstituicao(long actionID)
         {
@@ -133,9 +135,122 @@ namespace Capitulo01.Areas.Docente.Controllers
             string cursosProfessoresSession = HttpContext.Session.GetString("cursosProfessores");
             if(cursosProfessoresSession != null)
             {
-                cursosProfessor = JsonConvert.DeserializeObject<List<CursoProfessor>>(cursosProfessoresSession);           
-            }
+				cursosProfessor = JsonConvert.DeserializeObject<List<CursoProfessor>>(cursosProfessoresSession);
+				foreach (var item in cursosProfessor)
+				{
+					item.Curso = _context.Cursos.Find(item.CursoID);
+					item.Professor = _context.Professores.Find(item.ProfessorID);
+				}
+			}
+
+
             return View(cursosProfessor);
         }
-    }
+
+
+		public async Task<IActionResult> Index()
+		{
+			return View(await _context.Professores.ToListAsync());
+		}
+
+		private async Task<IActionResult> ObterVisaoProfessorPorId(long? id)
+		{
+			if (id == null)
+			{
+				return NotFound();
+			}
+			var professor = await professorDAL.ObterProfessorPorId((long)id);
+			if (professor == null)
+			{
+				return NotFound();
+			}
+			return View(professor);
+		}
+
+		public async Task<IActionResult> Details(long? id)
+		{
+			return await ObterVisaoProfessorPorId(id);
+		}
+
+		public async Task<IActionResult> Edit(long? id)
+		{
+			return await ObterVisaoProfessorPorId(id);
+		}
+
+		public async Task<IActionResult> Delete(long? id)
+		{
+			return await ObterVisaoProfessorPorId(id);
+		}
+
+		public IActionResult Create()
+		{
+			return View();
+		}
+
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+		public async Task<IActionResult> Create([Bind("Nome")] Professor professor)
+		{
+			try
+			{
+				if (ModelState.IsValid)
+				{
+					await professorDAL.GravarProfessor(professor);
+					return RedirectToAction(nameof(Index));
+				}
+			}
+			catch (DbUpdateException)
+			{
+				ModelState.AddModelError("", "Não foi possível inserir os dados.");
+			}
+			return View(professor);
+		}
+
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+		public async Task<IActionResult> Edit(long? id, [Bind("ProfessorID,Nome")] Professor professor)
+		{
+			if (id != professor.ProfessorID)
+			{
+				return NotFound();
+			}
+			if (ModelState.IsValid)
+			{
+				try
+				{
+					await professorDAL.GravarProfessor(professor)
+;
+				}
+				catch (DbUpdateConcurrencyException)
+				{
+					if (!await ProfessorExists(professor.ProfessorID))
+					{
+						return NotFound();
+					}
+					else
+					{
+						throw;
+					}
+				}
+				return RedirectToAction(nameof(Index));
+			}
+			return View(professor);
+		}
+		
+		[HttpPost, ActionName("Delete")]
+		[ValidateAntiForgeryToken]
+		public async Task<IActionResult> DeleteConfirmed(long? id)
+		{
+			var professor = await professorDAL.EliminarProfessorPorId((long)id);
+			TempData["Message"] = "Professor " + professor.Nome.ToUpper() + " foi removido";
+			return RedirectToAction(nameof(Index));
+		}
+
+		private async Task<bool> ProfessorExists(long? id)
+		{
+			return await professorDAL.ObterProfessorPorId((long)id) != null;
+		}
+
+	}
+
 }
