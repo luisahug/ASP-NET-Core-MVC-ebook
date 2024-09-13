@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
       <PrivateAssets>all</PrivateAssets>
@@ -34,7 +35,6 @@
     <Folder Include="Areas\Discente\Data\" />
     <Folder Include="Areas\Discente\Models\" />
     <Folder Include="Areas\Docente\Data\" />
-    <Folder Include="Models\Infra\" />
     <Folder Include="wwwroot\lib\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>

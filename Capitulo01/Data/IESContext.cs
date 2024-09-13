@@ -1,13 +1,15 @@
-﻿using Capitulo01.Models;
+﻿using Capitulo01.Models.Infra;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Modelo.Cadastros;
 using Modelo.Discente;
 using Modelo.Docente;
 
+
 namespace Capitulo01.Data
 {
-    public class IESContext : DbContext
-    {
+    public class IESContext : IdentityDbContext<UsuarioDaAplicacao>
+	{
         public IESContext(DbContextOptions<IESContext> options) : base(options)
         {
         }
