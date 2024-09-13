@@ -85,7 +85,7 @@ namespace Capitulo01.Areas.Docente.Controllers
             else
             {
                 cursoDAL.RegistrarProfessor((long)model.CursoID, (long)model.ProfessorID);
-
+                RegistrarProfessorNaSessao((long)model.CursoID, (long)model.ProfessorID);
 
                 PrepararViewBags(instituicaoDAL.ObterInstituicoesClassificadasPorNome().ToList(),
                     departamentoDAL.ObterDepartamentosPorInstituicao((long)model.InstituicaoID).ToList(),
@@ -112,6 +112,30 @@ namespace Capitulo01.Areas.Docente.Controllers
             return Json(new SelectList(professores, "ProfessorID", "Nome")
             );
 
+        }
+
+        public void RegistrarProfessorNaSessao(long cursoID, long professorID)
+        {
+            var cursoProfessor = new CursoProfessor() { ProfessorID = professorID, CursoID = cursoID };
+            List<CursoProfessor> cursosProfessor = new List<CursoProfessor>();
+            string cursosProfessoresSession = HttpContext.Session.GetString("cursosProfessores");
+            if(cursosProfessoresSession != null)
+            {
+                cursosProfessor = JsonConvert.DeserializeObject<List<CursoProfessor>>(cursosProfessoresSession);
+            }
+            cursosProfessor.Add(cursoProfessor);
+            HttpContext.Session.SetString("cursosProfessores", JsonConvert.SerializeObject(cursosProfessor));
+        }
+
+        public IActionResult VerificarUltimosRegistros()
+        {
+            List<CursoProfessor> cursosProfessor = new List<CursoProfessor>();
+            string cursosProfessoresSession = HttpContext.Session.GetString("cursosProfessores");
+            if(cursosProfessoresSession != null)
+            {
+                cursosProfessor = JsonConvert.DeserializeObject<List<CursoProfessor>>(cursosProfessoresSession);           
+            }
+            return View(cursosProfessor);
         }
     }
 }
