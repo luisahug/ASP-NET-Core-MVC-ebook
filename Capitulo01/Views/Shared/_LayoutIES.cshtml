@@ -46,7 +46,7 @@
 				@if (SignInManager.IsSignedIn(User))
 				{
 					<div>Olá @UserManager.GetUserName(User) seja bem-vindo(a) / 
-						@Html.ActionLink("Logout", "Sair", "Infra", new {AreaAttribute = ""})
+						@Html.ActionLink("Logout", "Sair", "Infra", new {area = ""})
 					</div>
 				}
 				else
@@ -89,7 +89,7 @@
 						</a>
 					</div>
 					<div class="row">
-						<a class="nav-item nav-link" asp-area="Docente" asp-controller="Professor" asp-action="VerificarUltimosRegistro">
+						<a class="nav-item nav-link" asp-area="Docente" asp-controller="Professor" asp-action="VerificarUltimosRegistros">
 							<img src="~/images/academico.png" width="30" height="30" alt="">
 							Verificar registros de professores
 						</a>
