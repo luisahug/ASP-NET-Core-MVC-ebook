@@ -36,7 +36,7 @@ Este é um projeto ASP.NET Core MVC ensinado pelo livro ASP.NET Core MVC - Aplic
 - Esse processo ocorre assim:
     - Dentro da pasta Capitulo01, no Explorador de Arquivos, na barra de busca digite cmd e abra a central de comando.
     - Insira os seguintes comandos:
-    dotnet ef database drop 
-    dotnet ef database update
+        - dotnet ef database drop 
+        - dotnet ef database update
 
 
